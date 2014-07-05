@@ -1,0 +1,2 @@
+C:\Users\michele\Desktop\NotaSpese\NotaSpese\NotaSpese.csproj;x86
+C:\Users\michele\Desktop\NotaSpese\NoteSpese.Test\NoteSpese.Test.csproj;x86
