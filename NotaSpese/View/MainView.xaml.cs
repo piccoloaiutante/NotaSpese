@@ -37,7 +37,7 @@ namespace NotaSpese.View
             {
                 Windows.Phone.UI.Input.HardwareButtons.BackPressed -= Back_pressed;
             };
-            DataContext = new MainViewModel(new NavigationService());
+           
         }
 
         /// <summary>
@@ -45,8 +45,11 @@ namespace NotaSpese.View
         /// </summary>
         /// <param name="e">Dati dell'evento in cui vengono descritte le modalità con cui la pagina è stata raggiunta.
         /// Questo parametro viene in genere utilizzato per configurare la pagina.</param>
-        protected override void OnNavigatedTo(NavigationEventArgs e)
+        protected override async void OnNavigatedTo(NavigationEventArgs e)
         {
+            var vm = new MainViewModel(new NavigationService(), new ExpenseService());
+            await vm.LoadExpenses();
+            DataContext = vm;
         }
 
 

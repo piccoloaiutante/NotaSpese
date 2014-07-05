@@ -10,7 +10,6 @@ App.xbf
 NotaSpese.xr.xml
 Styles\Styles.xbf
 View\DateView.xbf
-View\ExpenseListView.xbf
 View\ExpenseView.xbf
 View\ItineraryView.xbf
 View\MainView.xbf

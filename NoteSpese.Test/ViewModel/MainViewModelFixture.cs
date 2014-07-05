@@ -14,7 +14,8 @@ namespace NoteSpese.Test
         {
             //arrange
             var navigationService=new FakeNavigationService();
-            MainViewModel vm = new MainViewModel(navigationService);
+            var expenseService = new FakeExpenseService();
+            MainViewModel vm = new MainViewModel(navigationService, expenseService);
 
             //act
             vm.CreateNewExpenseAccount.Execute(null);
@@ -23,19 +24,7 @@ namespace NoteSpese.Test
             Assert.AreEqual(navigationService.Destination , typeof(DateView));
         }
 
-        [TestMethod]
-        public void ViewExpenses_Should_Navigate_To_ExpenseList()
-        {
-            //arrange
-            var navigationService = new FakeNavigationService();
-            MainViewModel vm = new MainViewModel(navigationService);
-
-            //act
-            vm.ViewExpenses.Execute(null);
-
-            //Assert
-            Assert.AreEqual(navigationService.Destination , typeof(ExpenseListView));
-        }
+        
     }
 
     public class FakeNavigationService:INavigationService

@@ -13,6 +13,7 @@ namespace NotaSpese.Service
         Task Init();
         Task Save(Expense exp);
         Task<List<Expense>> LoadAllExpenses();
+        Task DeleteAll();
     }
 
     public class ExpenseService : IExpenseService
@@ -41,6 +42,12 @@ namespace NotaSpese.Service
         public Task<List<Expense>> LoadAllExpenses() {
             var db = new SQLite.SQLiteAsyncConnection(DBPath, false);
             return db.QueryAsync<Expense>("Select * from expense");
+        }
+
+        public async Task DeleteAll() 
+        {
+            var db = new SQLite.SQLiteAsyncConnection(DBPath, false);
+            await db.ExecuteAsync("delete from expense");
         }
     }
 }

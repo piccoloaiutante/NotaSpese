@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<RunSettings>
+
+  <MSPhoneTest>
+
+    <!--to specify test execution on device, use a TargetDevice option as follows-->
+
+    <!--<TargetDevice>Device</TargetDevice>-->
+
+    <!--to specify an emulator instead, use a TargetDevice option like below-->
+
+    <TargetDevice>Emulator 8.1 WVGA 4 inch 512MB</TargetDevice>
+
+  </MSPhoneTest>
+
+</RunSettings>

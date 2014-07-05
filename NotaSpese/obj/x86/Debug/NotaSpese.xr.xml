@@ -1,12 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Roots >
+  <Roots.Interfaces>
+    <RootInterface FullName="Windows.UI.Xaml.Data.IValueConverter" />
+  </Roots.Interfaces>
   <Roots.PropertyPathNames>
     <RootPropertyPathName Name="Purpose" />
     <RootPropertyPathName Name="Date" />
     <RootPropertyPathName Name="Forward" />
     <RootPropertyPathName Name="Backward" />
-    <RootPropertyPathName Name="Expenses" />
-    <RootPropertyPathName Name="Itinerary" />
     <RootPropertyPathName Name="TotalAmount" />
     <RootPropertyPathName Name="Hotel" />
     <RootPropertyPathName Name="Food" />
@@ -16,7 +17,9 @@
     <RootPropertyPathName Name="Itineraries" />
     <RootPropertyPathName Name="SearchItinerary" />
     <RootPropertyPathName Name="SearchedText" />
-    <RootPropertyPathName Name="ViewExpenses" />
+    <RootPropertyPathName Name="SavedExpense" />
+    <RootPropertyPathName Name="Expenses" />
+    <RootPropertyPathName Name="Itinerary" />
     <RootPropertyPathName Name="CreateNewExpenseAccount" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
@@ -47,15 +50,13 @@
       <RootProperty Name="RowDefinitions" />
       <RootProperty Name="Children" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="ColumnDefinitions" />
       <RootMethod Name="GetRow" />
       <RootMethod Name="SetRow" />
+      <RootMethod Name="GetColumn" />
+      <RootMethod Name="SetColumn" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.HyperlinkButton">
-      <RootProperty Name="Content" />
-      <RootProperty Name="Tag" />
-      <RootProperty Name="FontSize" />
-      <RootProperty Name="Style" />
-    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.HyperlinkButton" />
     <RootType FullName="Windows.UI.Xaml.Controls.Control">
       <RootProperty Name="Padding" />
       <RootProperty Name="Foreground" />
@@ -70,6 +71,7 @@
       <RootProperty Name="Background" />
       <RootProperty Name="Content" />
       <RootProperty Name="BottomAppBar" />
+      <RootProperty Name="Resources" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
       <RootProperty Name="Height" />
@@ -105,6 +107,8 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Data.Binding">
       <RootProperty Name="Mode" />
+      <RootProperty Name="Converter" />
+      <RootProperty Name="ConverterParameter" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Image">
       <RootProperty Name="Source" />
@@ -126,17 +130,6 @@
       <RootProperty Name="FontFamily" />
     </RootType>
     <RootType FullName="NotaSpese.View.DateView" />
-    <RootType FullName="Windows.UI.Xaml.Controls.ListView">
-      <RootProperty Name="ItemsSource" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Height" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="ItemTemplate" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.DataTemplate">
-      <RootProperty Name="Template" />
-    </RootType>
-    <RootType FullName="NotaSpese.View.ExpenseListView" />
     <RootType FullName="NotaSpese.View.ExpenseView" />
     <RootType FullName="Windows.UI.Xaml.Controls.ListBox">
       <RootProperty Name="SelectedItem" />
@@ -151,9 +144,22 @@
       <RootProperty Name="Command" />
       <RootProperty Name="FontFamily" />
       <RootProperty Name="Content" />
-      <RootProperty Name="HorizontalAlignment" />
     </RootType>
     <RootType FullName="NotaSpese.View.ItineraryView" />
+    <RootType FullName="NotaSpese.Infrastructure.DateTimeToStringConverter" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ListView">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="ItemTemplate" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.DataTemplate">
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
+      <RootProperty Name="Width" />
+    </RootType>
     <RootType FullName="NotaSpese.View.MainView" />
   </Roots.RootTypes>
 </Roots>

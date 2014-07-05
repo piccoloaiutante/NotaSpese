@@ -1,1 +1,1 @@
-C:\Users\michele\Desktop\NotaSpese\NotaSpese\NotaSpese.csproj;x86
+C:\Users\michele\Documents\GitHub\NotaSpese\NotaSpese\NotaSpese.csproj;x86

@@ -1,0 +1,72 @@
+﻿<Page
+    x:Class="NotaSpese.View.ItineraryView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:NotaSpese.View"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:Name="RootGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,0,0,28">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="Assets/windows-sdk.png" Stretch="None"/>
+                <TextBlock Text="Gulliver" Style="{StaticResource TagLineTextStyle}" Margin="12,0" />
+            </StackPanel>
+            <TextBlock x:Name="SampleTitle" Text="Nota spese" Margin="9,-7,0,0" 
+                       Style="{StaticResource SampleHeaderTextStyle}" TextWrapping="Wrap"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <StackPanel x:Name="ScenarioControl" Margin="0,0,0,10" 
+                   Background="Transparent" HorizontalAlignment="Stretch" MaxHeight="500"
+                   ScrollViewer.VerticalScrollMode="Auto"
+                   ScrollViewer.VerticalScrollBarVisibility="Auto"
+                   ScrollViewer.HorizontalScrollMode="Disabled">
+                <TextBlock TextWrapping="Wrap" Style="{StaticResource BasicTextStyle}" Margin="0,0,0,35">
+                    Seleziona l'itinerario dalla lista.
+                </TextBlock>
+                <StackPanel Orientation="Horizontal">
+                    <TextBox Width="250" Text="{Binding SearchedText,Mode=TwoWay}" Margin="0,0,10,0" VerticalAlignment="Center"></TextBox>
+                    <Button Width="20" Command="{Binding SearchItinerary}" FontFamily="Segoe UI Symbol"></Button>
+                </StackPanel>
+                <ListBox SelectedItem="{Binding SelectedItinerary,Mode=TwoWay}" 
+                         ItemsSource="{Binding Itineraries}" VerticalAlignment="Stretch" 
+                         Height="354" Margin="0,0,-0.167,0" FontSize="36"></ListBox>
+            </StackPanel>
+            
+        </Grid>
+    </Grid>
+    <Page.BottomAppBar>
+        <CommandBar>
+            <CommandBar.PrimaryCommands>
+                <AppBarButton Label="back"  Command="{Binding Backward}"  >
+                    <AppBarButton.Icon>
+                        <FontIcon HorizontalAlignment="Center" Glyph="" VerticalAlignment="Center" FontFamily="Segoe UI Symbol"/>
+                    </AppBarButton.Icon>
+                </AppBarButton>
+                <AppBarButton Label="forward"  Command="{Binding Forward}"  >
+                    <AppBarButton.Icon>
+                        <FontIcon HorizontalAlignment="Center" Glyph="" VerticalAlignment="Center" FontFamily="Segoe UI Symbol"/>
+                    </AppBarButton.Icon>
+                </AppBarButton>
+
+            </CommandBar.PrimaryCommands>
+
+        </CommandBar>
+    </Page.BottomAppBar>
+</Page>
+

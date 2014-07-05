@@ -86,37 +86,36 @@ namespace NotaSpese.CUITest
         }
         
         #region Properties
-        public UIScrollerPane UIScrollerPane
+        public UINList UINList
         {
             get
             {
-                if ((this.mUIScrollerPane == null))
+                if ((this.mUINList == null))
                 {
-                    this.mUIScrollerPane = new UIScrollerPane(this);
+                    this.mUINList = new UINList(this);
                 }
-                return this.mUIScrollerPane;
+                return this.mUINList;
             }
         }
         #endregion
         
         #region Fields
-        private UIScrollerPane mUIScrollerPane;
+        private UINList mUINList;
         #endregion
     }
     
     [GeneratedCode("Coded UITest Builder", "12.0.30501.0")]
-    public class UIScrollerPane : UITestControl
+    public class UINList : UITestControl
     {
         
-        public UIScrollerPane(UITestControl searchLimitContainer) : 
+        public UINList(UITestControl searchLimitContainer) : 
                 base(searchLimitContainer)
         {
             #region Search Criteria
             this.TechnologyName = "UIA";
             this.SearchProperties["FrameworkId"] = "UIX";
-            this.SearchProperties[UITestControl.PropertyNames.ControlType] = "Pane";
-            this.SearchProperties[UITestControl.PropertyNames.ClassName] = null;
-            this.SearchProperties["AutomationId"] = "Scroller";
+            this.SearchProperties[UITestControl.PropertyNames.ControlType] = "List";
+            this.SearchProperties["AutomationId"] = "ListItem";
             #endregion
         }
         
@@ -188,18 +187,6 @@ namespace NotaSpese.CUITest
             }
         }
         
-        public XamlEdit UIItemEdit
-        {
-            get
-            {
-                if ((this.mUIItemEdit == null))
-                {
-                    this.mUIItemEdit = new XamlEdit(this);
-                }
-                return this.mUIItemEdit;
-            }
-        }
-        
         public UIItemList UIItemList
         {
             get
@@ -212,6 +199,18 @@ namespace NotaSpese.CUITest
             }
         }
         
+        public XamlEdit UIItemEdit
+        {
+            get
+            {
+                if ((this.mUIItemEdit == null))
+                {
+                    this.mUIItemEdit = new XamlEdit(this);
+                }
+                return this.mUIItemEdit;
+            }
+        }
+        
         public XamlEdit UIItemEdit1
         {
             get
@@ -220,7 +219,7 @@ namespace NotaSpese.CUITest
                 {
                     this.mUIItemEdit1 = new XamlEdit(this);
                     #region Search Criteria
-                    this.mUIItemEdit1.SearchProperties[XamlEdit.PropertyNames.Instance] = "3";
+                    this.mUIItemEdit1.SearchProperties[XamlEdit.PropertyNames.Instance] = "2";
                     #endregion
                 }
                 return this.mUIItemEdit1;
@@ -235,7 +234,7 @@ namespace NotaSpese.CUITest
                 {
                     this.mUIItemEdit2 = new XamlEdit(this);
                     #region Search Criteria
-                    this.mUIItemEdit2.SearchProperties[XamlEdit.PropertyNames.Instance] = "2";
+                    this.mUIItemEdit2.SearchProperties[XamlEdit.PropertyNames.Instance] = "3";
                     #endregion
                 }
                 return this.mUIItemEdit2;
@@ -248,9 +247,9 @@ namespace NotaSpese.CUITest
         
         private XamlButton mUIVisualizzalenotespesButton;
         
-        private XamlEdit mUIItemEdit;
-        
         private UIItemList mUIItemList;
+        
+        private XamlEdit mUIItemEdit;
         
         private XamlEdit mUIItemEdit1;
         
@@ -282,10 +281,44 @@ namespace NotaSpese.CUITest
                 return this.mUIRomaNapoliListItem;
             }
         }
+        
+        public XamlListItem UIMilanoPalermoListItem
+        {
+            get
+            {
+                if ((this.mUIMilanoPalermoListItem == null))
+                {
+                    this.mUIMilanoPalermoListItem = new XamlListItem(this);
+                    #region Search Criteria
+                    this.mUIMilanoPalermoListItem.SearchProperties[XamlListItem.PropertyNames.Name] = "Milano -> Palermo";
+                    #endregion
+                }
+                return this.mUIMilanoPalermoListItem;
+            }
+        }
+        
+        public XamlListItem UIBresciaBergamoListItem
+        {
+            get
+            {
+                if ((this.mUIBresciaBergamoListItem == null))
+                {
+                    this.mUIBresciaBergamoListItem = new XamlListItem(this);
+                    #region Search Criteria
+                    this.mUIBresciaBergamoListItem.SearchProperties[XamlListItem.PropertyNames.Name] = "Brescia -> Bergamo";
+                    #endregion
+                }
+                return this.mUIBresciaBergamoListItem;
+            }
+        }
         #endregion
         
         #region Fields
         private XamlListItem mUIRomaNapoliListItem;
+        
+        private XamlListItem mUIMilanoPalermoListItem;
+        
+        private XamlListItem mUIBresciaBergamoListItem;
         #endregion
     }
     
@@ -332,12 +365,32 @@ namespace NotaSpese.CUITest
                 return this.mUISincronizzazioneWindow;
             }
         }
+        
+        public UITestControl UIAddButton
+        {
+            get
+            {
+                if ((this.mUIAddButton == null))
+                {
+                    this.mUIAddButton = new UITestControl(this);
+                    #region Search Criteria
+                    this.mUIAddButton.TechnologyName = "UIA";
+                    this.mUIAddButton.SearchProperties["FrameworkId"] = "UIX";
+                    this.mUIAddButton.SearchProperties[UITestControl.PropertyNames.ControlType] = "Button";
+                    this.mUIAddButton.SearchProperties[UITestControl.PropertyNames.Name] = "add";
+                    #endregion
+                }
+                return this.mUIAddButton;
+            }
+        }
         #endregion
         
         #region Fields
         private UITestControl mUIForwardButton;
         
         private UISincronizzazioneWindow mUISincronizzazioneWindow;
+        
+        private UITestControl mUIAddButton;
         #endregion
     }
     

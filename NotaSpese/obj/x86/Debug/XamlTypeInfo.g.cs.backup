@@ -124,23 +124,25 @@ namespace NotaSpese.NotaSpese_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[7];
+            _typeNameTable = new string[8];
             _typeNameTable[0] = "NotaSpese.View.DateView";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "NotaSpese.View.ExpenseListView";
-            _typeNameTable[4] = "NotaSpese.View.ExpenseView";
-            _typeNameTable[5] = "NotaSpese.View.ItineraryView";
-            _typeNameTable[6] = "NotaSpese.View.MainView";
+            _typeNameTable[3] = "NotaSpese.View.ExpenseView";
+            _typeNameTable[4] = "NotaSpese.View.ItineraryView";
+            _typeNameTable[5] = "NotaSpese.Infrastructure.DateTimeToStringConverter";
+            _typeNameTable[6] = "Object";
+            _typeNameTable[7] = "NotaSpese.View.MainView";
 
-            _typeTable = new global::System.Type[7];
+            _typeTable = new global::System.Type[8];
             _typeTable[0] = typeof(global::NotaSpese.View.DateView);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::NotaSpese.View.ExpenseListView);
-            _typeTable[4] = typeof(global::NotaSpese.View.ExpenseView);
-            _typeTable[5] = typeof(global::NotaSpese.View.ItineraryView);
-            _typeTable[6] = typeof(global::NotaSpese.View.MainView);
+            _typeTable[3] = typeof(global::NotaSpese.View.ExpenseView);
+            _typeTable[4] = typeof(global::NotaSpese.View.ItineraryView);
+            _typeTable[5] = typeof(global::NotaSpese.Infrastructure.DateTimeToStringConverter);
+            _typeTable[6] = typeof(global::System.Object);
+            _typeTable[7] = typeof(global::NotaSpese.View.MainView);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -176,10 +178,10 @@ namespace NotaSpese.NotaSpese_XamlTypeInfo
         }
 
         private object Activate_0_DateView() { return new global::NotaSpese.View.DateView(); }
-        private object Activate_3_ExpenseListView() { return new global::NotaSpese.View.ExpenseListView(); }
-        private object Activate_4_ExpenseView() { return new global::NotaSpese.View.ExpenseView(); }
-        private object Activate_5_ItineraryView() { return new global::NotaSpese.View.ItineraryView(); }
-        private object Activate_6_MainView() { return new global::NotaSpese.View.MainView(); }
+        private object Activate_3_ExpenseView() { return new global::NotaSpese.View.ExpenseView(); }
+        private object Activate_4_ItineraryView() { return new global::NotaSpese.View.ItineraryView(); }
+        private object Activate_5_DateTimeToStringConverter() { return new global::NotaSpese.Infrastructure.DateTimeToStringConverter(); }
+        private object Activate_7_MainView() { return new global::NotaSpese.View.MainView(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -206,30 +208,34 @@ namespace NotaSpese.NotaSpese_XamlTypeInfo
                 xamlType = new global::NotaSpese.NotaSpese_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  NotaSpese.View.ExpenseListView
+            case 3:   //  NotaSpese.View.ExpenseView
                 userType = new global::NotaSpese.NotaSpese_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_3_ExpenseListView;
+                userType.Activator = Activate_3_ExpenseView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 4:   //  NotaSpese.View.ExpenseView
+            case 4:   //  NotaSpese.View.ItineraryView
                 userType = new global::NotaSpese.NotaSpese_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_4_ExpenseView;
+                userType.Activator = Activate_4_ItineraryView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 5:   //  NotaSpese.View.ItineraryView
-                userType = new global::NotaSpese.NotaSpese_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_5_ItineraryView;
+            case 5:   //  NotaSpese.Infrastructure.DateTimeToStringConverter
+                userType = new global::NotaSpese.NotaSpese_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_5_DateTimeToStringConverter;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 6:   //  NotaSpese.View.MainView
+            case 6:   //  Object
+                xamlType = new global::NotaSpese.NotaSpese_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 7:   //  NotaSpese.View.MainView
                 userType = new global::NotaSpese.NotaSpese_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_6_MainView;
+                userType.Activator = Activate_7_MainView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

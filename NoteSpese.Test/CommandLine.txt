@@ -1,0 +1,1 @@
+﻿& 'C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\CommonExtensions\Microsoft\TestWindow\vstest.console.exe' .\AppPackages\NoteSpese.Test_1.0.0.0_x86_Debug_Test\NoteSpese.TEst_1.0.0.0_x86_debug.appx /settings:devicetarget.runsettings /InIsolation

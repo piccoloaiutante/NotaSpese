@@ -34,7 +34,7 @@ namespace NoteSpese.Test
 
             //Act
             vm.Food = 100;
-            vm.Km = 200;
+            vm.Travel = 200;
             vm.Hotel = 1000;
 
             //Assert
@@ -57,6 +57,8 @@ namespace NoteSpese.Test
             Assert.AreEqual(vm.TotalAmount, total);
         }
 
+       
+
         [TestCleanup]
         public void Cleanup()
         {
@@ -64,6 +66,7 @@ namespace NoteSpese.Test
             expenseService = null;
             vm = null;
         }
+
     }
 
     public class FakeExpenseService:IExpenseService
@@ -71,6 +74,7 @@ namespace NoteSpese.Test
         public bool InitCalled;
         public bool SaveCalled;
         public bool LoadAllExpensesCalled;
+        public bool DeleteCalled;
 
         public Task Init() 
         {
@@ -87,6 +91,12 @@ namespace NoteSpese.Test
         public Task<List<Expense>> LoadAllExpenses() 
         {
             LoadAllExpensesCalled = true;
+            return null;
+        }
+
+        public Task DeleteAll()
+        {
+            DeleteCalled = true;
             return null;
         }
     }

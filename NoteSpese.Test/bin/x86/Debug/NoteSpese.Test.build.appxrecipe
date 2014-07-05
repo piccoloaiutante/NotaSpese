@@ -7,22 +7,22 @@
     <SolutionConfiguration>Debug|x86</SolutionConfiguration>
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>785ccfc0-028e-4d6a-b210-766dad59635a</PackageIdentityName>
-    <IntermediateOutputPath>C:\Users\michele\Desktop\NotaSpese\NoteSpese.Test\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\michele\Documents\GitHub\NotaSpese\NoteSpese.Test\obj\x86\Debug\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\michele\Desktop\NotaSpese\NoteSpese.Test\bin\x86\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\michele\Documents\GitHub\NotaSpese\NoteSpese.Test\bin\x86\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\michele\Desktop\NotaSpese\NoteSpese.Test\bin\x86\Debug\NoteSpese.Test.dll">
+    <AppxPackagedFile Include="C:\Users\michele\Documents\GitHub\NotaSpese\NoteSpese.Test\bin\x86\Debug\NoteSpese.Test.dll">
       <PackagePath>NoteSpese.Test.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\michele\Desktop\NotaSpese\NoteSpese.Test\bin\x86\Debug\NoteSpese.Test.pdb">
+    <AppxPackagedFile Include="C:\Users\michele\Documents\GitHub\NotaSpese\NoteSpese.Test\bin\x86\Debug\NoteSpese.Test.pdb">
       <PackagePath>NoteSpese.Test.pdb</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\michele\Desktop\NotaSpese\NotaSpese\bin\x86\Debug\NotaSpese.pdb">
+    <AppxPackagedFile Include="C:\Users\michele\Documents\GitHub\NotaSpese\NotaSpese\bin\x86\Debug\NotaSpese.pdb">
       <PackagePath>NotaSpese.pdb</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\WindowsPhoneApp\v8.1\ExtensionSDKs\TestPlatform\12.0\References\CommonConfiguration\neutral\Microsoft.VisualStudio.TestPlatform.Core.dll">
@@ -37,7 +37,7 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\WindowsPhoneApp\v8.1\ExtensionSDKs\MSTestFramework\12.0\References\CommonConfiguration\neutral\Microsoft.VisualStudio.TestPlatform.UnitTestFramework.dll">
       <PackagePath>Microsoft.VisualStudio.TestPlatform.UnitTestFramework.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\michele\Desktop\NotaSpese\NotaSpese\bin\x86\Debug\NotaSpese.exe">
+    <AppxPackagedFile Include="C:\Users\michele\Documents\GitHub\NotaSpese\NotaSpese\bin\x86\Debug\NotaSpese.exe">
       <PackagePath>NotaSpese.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\WindowsPhoneApp\v8.1\ExtensionSDKs\TestPlatform\12.0\Redist\CommonConfiguration\neutral\Microsoft.VisualStudio.TestPlatform.Extensions.MSPhoneAdapter.Target.dll">
@@ -58,67 +58,64 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\WindowsPhoneApp\v8.1\ExtensionSDKs\TestPlatform\12.0\Redist\CommonConfiguration\neutral\vstest_executionengine_platformbridge.winmd">
       <PackagePath>vstest_executionengine_platformbridge.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\michele\Desktop\NotaSpese\NoteSpese.Test\Assets\Logo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\michele\Documents\GitHub\NotaSpese\NoteSpese.Test\Assets\Logo.scale-240.png">
       <PackagePath>Assets\Logo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\michele\Desktop\NotaSpese\NoteSpese.Test\Assets\SmallLogo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\michele\Documents\GitHub\NotaSpese\NoteSpese.Test\Assets\SmallLogo.scale-240.png">
       <PackagePath>Assets\SmallLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\michele\Desktop\NotaSpese\NoteSpese.Test\Assets\SplashScreen.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\michele\Documents\GitHub\NotaSpese\NoteSpese.Test\Assets\SplashScreen.scale-240.png">
       <PackagePath>Assets\SplashScreen.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\michele\Desktop\NotaSpese\NoteSpese.Test\Assets\Square71x71Logo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\michele\Documents\GitHub\NotaSpese\NoteSpese.Test\Assets\Square71x71Logo.scale-240.png">
       <PackagePath>Assets\Square71x71Logo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\michele\Desktop\NotaSpese\NoteSpese.Test\Assets\StoreLogo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\michele\Documents\GitHub\NotaSpese\NoteSpese.Test\Assets\StoreLogo.scale-240.png">
       <PackagePath>Assets\StoreLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\michele\Desktop\NotaSpese\NoteSpese.Test\Assets\WideLogo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\michele\Documents\GitHub\NotaSpese\NoteSpese.Test\Assets\WideLogo.scale-240.png">
       <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\michele\Desktop\NotaSpese\NotaSpese\Assets\appbar.arrow.left.png">
+    <AppxPackagedFile Include="C:\Users\michele\Documents\GitHub\NotaSpese\NotaSpese\Assets\appbar.arrow.left.png">
       <PackagePath>Assets\appbar.arrow.left.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\michele\Desktop\NotaSpese\NotaSpese\Assets\appbar.arrow.right.png">
+    <AppxPackagedFile Include="C:\Users\michele\Documents\GitHub\NotaSpese\NotaSpese\Assets\appbar.arrow.right.png">
       <PackagePath>Assets\appbar.arrow.right.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\michele\Documents\GitHub\NotaSpese\NoteSpese.Test\CommandLine.txt">
+      <PackagePath>CommandLine.txt</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\WindowsPhoneApp\v8.1\ExtensionSDKs\SQLite.WP81\3.8.5\Redist\Debug\x86\sqlite3.pdb">
       <PackagePath>sqlite3.pdb</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\michele\Desktop\NotaSpese\NotaSpese\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\michele\Documents\GitHub\NotaSpese\NotaSpese\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\michele\Desktop\NotaSpese\NotaSpese\bin\x86\Debug\Styles\Styles.xbf">
+    <AppxPackagedFile Include="C:\Users\michele\Documents\GitHub\NotaSpese\NotaSpese\bin\x86\Debug\Styles\Styles.xbf">
       <PackagePath>Styles\Styles.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\michele\Desktop\NotaSpese\NotaSpese\bin\x86\Debug\View\DateView.xbf">
+    <AppxPackagedFile Include="C:\Users\michele\Documents\GitHub\NotaSpese\NotaSpese\bin\x86\Debug\View\DateView.xbf">
       <PackagePath>View\DateView.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\michele\Desktop\NotaSpese\NotaSpese\bin\x86\Debug\View\ExpenseListView.xbf">
-      <PackagePath>View\ExpenseListView.xbf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\michele\Desktop\NotaSpese\NotaSpese\bin\x86\Debug\View\ExpenseView.xbf">
+    <AppxPackagedFile Include="C:\Users\michele\Documents\GitHub\NotaSpese\NotaSpese\bin\x86\Debug\View\ExpenseView.xbf">
       <PackagePath>View\ExpenseView.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\michele\Desktop\NotaSpese\NotaSpese\bin\x86\Debug\View\ItineraryView.xbf">
+    <AppxPackagedFile Include="C:\Users\michele\Documents\GitHub\NotaSpese\NotaSpese\bin\x86\Debug\View\ItineraryView.xbf">
       <PackagePath>View\ItineraryView.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\michele\Desktop\NotaSpese\NotaSpese\bin\x86\Debug\View\MainView.xbf">
+    <AppxPackagedFile Include="C:\Users\michele\Documents\GitHub\NotaSpese\NotaSpese\bin\x86\Debug\View\MainView.xbf">
       <PackagePath>View\MainView.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\michele\Desktop\NotaSpese\NotaSpese\bin\x86\Debug\View\_DateView.xbf">
-      <PackagePath>View\_DateView.xbf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\michele\Desktop\NotaSpese\NotaSpese\bin\x86\Debug\NotaSpese.xr.xml">
+    <AppxPackagedFile Include="C:\Users\michele\Documents\GitHub\NotaSpese\NotaSpese\bin\x86\Debug\NotaSpese.xr.xml">
       <PackagePath>NotaSpese.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\michele\Desktop\NotaSpese\NoteSpese.Test\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\michele\Documents\GitHub\NotaSpese\NoteSpese.Test\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
