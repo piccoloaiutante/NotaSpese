@@ -42,8 +42,8 @@ namespace NoteSpese.Test
         }
 
         [TestMethod]
-        [DataRow(100,50,50,200,DisplayName="prova")]
-        [DataRow(200, 100, 150, 450, DisplayName = "prova")]
+        [DataRow(100,50,50,200,DisplayName="Expense Sum 1")]
+        [DataRow(200, 100, 150, 450, DisplayName = "Expense sum 2")]
         public void CalculateExpanses_Should_Sum_AllExpenses_General(int food,int travel,int hotel, int total)
         {
             //Arrange
