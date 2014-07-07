@@ -58,7 +58,7 @@ namespace NotaSpese.ViewModel
         }
 
         private async void ExecuteSave() {
-            MessageDialog data = new MessageDialog("Dati salvati correttamente", "Sincronizzazione");
+            MessageDialog data = new MessageDialog("Dati salvati correttamente", "Salvataggio");
             await data.ShowAsync();
             await  _expenseService.Save(Expense);
             _navigationService.Navigate(typeof(MainView));

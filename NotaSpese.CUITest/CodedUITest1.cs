@@ -19,42 +19,46 @@ namespace NotaSpese.CUITest
     {
         private string appIdentifier = "{F4DE85AF-57CF-4833-8D1D-32190FE39E76}:App:f4de85af-57cf-4833-8d1d-32190fe39e76_xn6pvyr3tpx86!App";
 
-
-
         public CodedUITest1()
         {
         }
 
-        [TestInitialize]
-        public async Task Setup()
-        {
-            //StorageFolder local = Windows.Storage.ApplicationData.Current.LocalFolder;
-            //var dbFile = await local.GetFileAsync("expense.sqlite");
-        }
-
-        //{F4DE85AF-57CF-4833-8D1D-32190FE39E76}:App:f4de85af-57cf-4833-8d1d-32190fe39e76_xn6pvyr3tpx86!App
         [TestMethod]
         public void Adding_New_Expense_Should_Save_New_Expense()
         {
-            // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
+            // lancio l'applicazione
             XamlWindow appWindow = XamlWindow.Launch(appIdentifier);
 
-
+            // mi salvo il numero di note spese salvate
             var expense = UIMap.UINotaSpeseWindow.UIItemList.Items.Count;
+
+            // tap sulla creazione di una nuova nota spese
             Gesture.Tap(UIMap.UIItemWindow.UIAddButton);
 
+            // aggiungo la motivazione della trasferta
+            UIMap.UINotaSpeseWindow.UIItemEdit.Text = "Vendita nuovo prodotto";
 
-            UIMap.UINotaSpeseWindow.UIItemEdit.Text = "test";
-
+            // Tap su avanti
             Gesture.Tap(UIMap.UIItemWindow.UIForwardButton);
+
+            // seleziono la tratta della trasferta
             Gesture.Tap(UIMap.UINotaSpeseWindow.UIItemList.UIRomaNapoliListItem);
+
+            // tap su avanti
             Gesture.Tap(UIMap.UIItemWindow.UIForwardButton);
+
+            // aggiungo i costi della trasferta
             UIMap.UINotaSpeseWindow.UIItemEdit.Text = "90";
             UIMap.UINotaSpeseWindow.UIItemEdit1.Text = "150";
             UIMap.UINotaSpeseWindow.UIItemEdit2.Text = "200";
+
+            // tap su avanti
             Gesture.Tap(UIMap.UIItemWindow.UIForwardButton);
+
+            // ok sul salvataggio
             Gesture.Tap(UIMap.UIItemWindow.UISincronizzazioneWindow.UIChiudiButton);
 
+            // verifico che la nota spese sia presente nella lista
             Assert.IsTrue(UIMap.UINotaSpeseWindow.UIItemList.Items.Count == ++expense);
         }
 
